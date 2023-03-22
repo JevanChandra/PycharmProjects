@@ -1,3 +1,4 @@
+import random
 
 
 def main():
@@ -7,7 +8,9 @@ def main():
     option = input(">>>").upper()
     while option != "Q":
         if option == "G":
-            score = get_valid_score()
+            # score = get_valid_score()
+            score = get_random_score()
+            print(f"Your random score is {score}")
         elif option == "P":
             print(score)
             message = score_result(score)
@@ -21,6 +24,10 @@ def main():
 
     else:
         print("farewell")
+
+
+def get_random_score():
+    return random.randint(0, 100)
 
 
 def print_stars(score):
