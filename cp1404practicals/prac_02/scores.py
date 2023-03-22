@@ -1,7 +1,14 @@
+import random
+
+
 def main():
     score = float(input("Enter score: "))
     message = score_result(score)
     print(message)
+    random_score = random.randint(1, 100)
+    print(f"random score: {random_score}")
+    random_message = score_result(random_score)
+    print(random_message)
 
 
 def score_result(score):
