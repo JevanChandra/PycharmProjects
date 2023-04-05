@@ -16,4 +16,4 @@ What did you see on line 3?
 2.5 is the smallest number and 5.4999....
 """
 
-print(random.uniform(1, 101))
+print(random.uniform(1, 100))
