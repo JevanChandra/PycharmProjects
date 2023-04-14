@@ -12,6 +12,5 @@ for i in range(0, int(quick_picks)):
         else:
             numbers.append(number)
     numbers.sort()
-    numbers_string = [str(number) for number in numbers]
-    joined_numbers = " ".join(numbers_string)
+    joined_numbers = " ".join("{:2d}".format(number) for number in numbers)
     print(f"{joined_numbers}")
