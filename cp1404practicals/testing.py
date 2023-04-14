@@ -53,15 +53,17 @@ import random
 #
 #
 # print(fn(1, 2))
+#
+# # x = str(int('1.0'))
+# # x[-1] = '2'
+#
+# previous_number = 0
+# number = random.randint(1, 45)
+# for i in range(0, 5):
+#     while number < previous_number:
+#         bigger_number = random.randint(number, 45)
+#         previous_number = bigger_number
+#         print(number)
+#         print(previous_number)
 
-# x = str(int('1.0'))
-# x[-1] = '2'
-
-previous_number = 0
-number = random.randint(1, 45)
-for i in range(0, 5):
-    while number < previous_number:
-        bigger_number = random.randint(number, 45)
-        previous_number = bigger_number
-        print(number)
-        print(previous_number)
+print("*".join([len(word) for word in "one*two*three".split('*')]))
