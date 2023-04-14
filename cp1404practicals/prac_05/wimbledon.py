@@ -4,7 +4,7 @@ Game, Set, Match
 Estimate: 40 minutes
 Actual  : 58 minutes
 """
-with open('wimbledon.csv', "r", encoding="utf-8-sig") as in_file:
+with open('wimbledon.csv.csv', "r", encoding="utf-8-sig") as in_file:
     winners = {}
     country_winners = []
     skip_first_row = in_file.readline()
