@@ -46,6 +46,7 @@ def main():
             append_new_place(city, country, places, priority, unvisited_places)
 
         elif user_menu_choice == "M":
+            print("M")
 
         else:
             print("Invalid menu choice")
