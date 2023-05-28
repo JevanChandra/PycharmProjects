@@ -9,11 +9,10 @@ from cp1404practicals.prac_06.car import Car
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    joined_string = []
-    for i in range(n):
-        joined_string.append(s)
-        if i + 1 == n:
-            return "-".join(joined_string)
+    word = s
+    for i in range(n - 1):
+        word = " ".join([word, s])
+    return word
 
 
 def is_long_word(word, length=5):
@@ -54,16 +53,17 @@ def run_tests():
     test_car = Car()
     assert test_car.fuel == 0
 
-    def format_phrase(phrase):
+    def change_words(words):
         """
-        >>> format_phrase('hello') == 'Hello.'
+        >>> change_words('hello') == 'Hello.'
         True
-        >>> format_phrase('It is an ex parrot.') == 'It is an ex parrot.'
+        >>> change_words('It is an ex parrot.') == 'It is an ex parrot.'
         False
-        >>> format_phrase('i like turtles') == 'I like turtles.'
+        >>> change_words('i like turtles') == 'I like turtles.'
         True
         """
-        return phrase.capitalize() + "."
+        return words.capitalize() + "."
+
 
 run_tests()
 
